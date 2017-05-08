@@ -8,7 +8,9 @@ namespace FantasticFonts
 		{
 			InitializeComponent();
 
-			MainPage = new FantasticFontsPage();
+			//MainPage = new FantasticFontsPage();
+			//MainPage = new AttachedFontPage();
+			MainPage = new FontWithMarkupExtensionPage();
 		}
 
 		protected override void OnStart()
