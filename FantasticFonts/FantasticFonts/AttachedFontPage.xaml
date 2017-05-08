@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:FantasticFonts"
+	x:Class="FantasticFonts.AttachedFontPage"
+	BackgroundColor="#FBF1FB">
+	<ContentPage.Content>
+		<Label TextColor="#934293" Text="Swanky" FontSize="80" VerticalOptions="Center" HorizontalOptions="Center"
+			local:AttachedSwank.CustomFontName="Cabin Sketch"
+			local:AttachedSwank.CustomFontFileName="CabinSketch-Reg.ttf"/>
+	</ContentPage.Content>
+</ContentPage>

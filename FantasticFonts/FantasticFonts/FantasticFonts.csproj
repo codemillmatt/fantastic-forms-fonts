@@ -30,6 +30,15 @@
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
     <EmbeddedResource Include="FantasticFontsPage.xaml" />
+    <EmbeddedResource Include="FontWithStylePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttachedFontPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FontWithMarkupExtensionPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -39,6 +48,17 @@
       <DependentUpon>FantasticFontsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FontWithStylePage.xaml.cs">
+      <DependentUpon>FontWithStylePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AttachedSwank.cs" />
+    <Compile Include="AttachedFontPage.xaml.cs">
+      <DependentUpon>AttachedFontPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FontWithMarkupExtensionPage.xaml.cs">
+      <DependentUpon>FontWithMarkupExtensionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomFontExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

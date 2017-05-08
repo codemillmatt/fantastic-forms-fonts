@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="FantasticFonts.FontWithStylePage">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style x:Key="SwankyFontStyle" TargetType="Label">
+				<Setter Property="FontFamily">
+					<Setter.Value>
+						<OnPlatform x:TypeArguments="x:String">
+							<On Platform="iOS">Cabin Sketch</On>
+							<On Platform="Android">CabinSketch-Reg.ttf#Cabin Sketch</On>
+						</OnPlatform>
+					</Setter.Value>
+				</Setter>
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<Label TextColor="#934293" Text="Swanky" FontSize="80" VerticalOptions="Center" HorizontalOptions="Center" 
+			Style="{StaticResource SwankyFontStyle}" />
+	</ContentPage.Content>
+</ContentPage>

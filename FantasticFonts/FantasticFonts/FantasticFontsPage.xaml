@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage 
-	xmlns="http://xamarin.com/schemas/2014/forms" 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	xmlns:local="clr-namespace:FantasticFonts" 
-	x:Class="FantasticFonts.FantasticFontsPage"
+	x:Class="FantasticFonts.FantasticFontsPage" 
 	BackgroundColor="#FBF1FB">
-<Label TextColor="#934293" Text="Swanky" FontSize="80" VerticalOptions="Center" HorizontalOptions="Center">
-	<Label.FontFamily>
-		<OnPlatform x:TypeArguments="x:String">
-			<On Platform="iOS">Cabin Sketch</On>
-			<On Platform="Android">CabinSketch-Reg.ttf#Cabin Sketch</On>
-		</OnPlatform>
-	</Label.FontFamily>
-</Label>
+
+	<Label TextColor="#934293" Text="Swanky" FontSize="80" VerticalOptions="Center" HorizontalOptions="Center">
+		<Label.FontFamily>
+			<OnPlatform x:TypeArguments="x:String">
+				<On Platform="iOS">Cabin Sketch</On>
+				<On Platform="Android">CabinSketch-Reg.ttf#Cabin Sketch</On>
+			</OnPlatform>
+		</Label.FontFamily>
+	</Label>
+
 </ContentPage>
