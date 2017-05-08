@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:FantasticFonts"
 	x:Class="FantasticFonts.FontWithStylePage">
 	<ContentPage.Resources>
 		<ResourceDictionary>
-			<Style x:Key="SwankyFontStyle" TargetType="Label">
-				<Setter Property="FontFamily">
+			<Style x:Key="SwankyFontStyle" TargetType="Label" >
+				<Setter Property="FontFamily" Value="{local:CustomFont FontFileAndName=CabinSketch-Reg.ttf#Cabin Sketch}">
+				<!--
 					<Setter.Value>
 						<OnPlatform x:TypeArguments="x:String">
 							<On Platform="iOS">Cabin Sketch</On>
 							<On Platform="Android">CabinSketch-Reg.ttf#Cabin Sketch</On>
 						</OnPlatform>
 					</Setter.Value>
+					-->
 				</Setter>
 			</Style>
 		</ResourceDictionary>

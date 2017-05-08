@@ -10,7 +10,8 @@ namespace FantasticFonts
 
 			//MainPage = new FantasticFontsPage();
 			//MainPage = new AttachedFontPage();
-			MainPage = new FontWithMarkupExtensionPage();
+			//MainPage = new FontWithMarkupExtensionPage();
+			MainPage = new FontWithStylePage();
 		}
 
 		protected override void OnStart()
